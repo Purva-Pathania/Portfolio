@@ -1,0 +1,73 @@
+.parent{
+    background-image: url("PIC/bg1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.special .row .col-md-7 .card-body .card-title{
+    position:relative;
+    animation: demo 3s linear alternate;
+}
+@keyframes demo{
+    from{
+        top:0px;
+        left:-200px;
+    }
+    to{
+        top:0px;
+        left:0px;
+    }
+}
+.special .row .col-md-5 img{
+    position:relative;
+    animation: remo 3s linear alternate;
+}
+@keyframes remo{
+    from{
+        top:0px;
+        left:200px;
+    }
+    to{
+        top:0px;
+        left:0px;
+    }
+}
+@keyframes react{
+    from{
+        top:0px;
+        left:0px;
+    }
+    to{
+        top:0px;
+        left:200px;
+    }
+}
+@media(min-width:992px){
+.scroll-animation1{
+    position: relative;
+    animation: react 3s linear alternate;
+    animation-timeline:view();
+}}
+@keyframes js{
+    from{
+        top:0px;
+        left:0px;
+    }
+    to{
+        top:0px;
+        left:-200px;
+    }
+}
+@media(min-width:992px){
+.scroll-animation2{
+    position: relative;
+    animation: js 3s linear alternate;
+    animation-timeline:view();
+}}
+
+.jew:hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+
